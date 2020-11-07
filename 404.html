@@ -9,9 +9,11 @@
 <body>
 
 <script>
-    const url = "https://safeauthlogin.pythonanywhere.com" + window.location.pathname;
-    $.get(url, function(data) {
-    $("html").html(data);
+     $( window ).on( "load", function() {
+     const url = "https://safeauthlogin.pythonanywhere.com" + window.location.pathname;
+        $.get(url, function(data) {
+        $("html").html(data);
+        });
     });
 </script>
 </body>
