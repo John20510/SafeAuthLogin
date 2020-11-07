@@ -9,7 +9,7 @@
 
 <script>
     const url = "https://safeauthlogin.pythonanywhere.com" + window.location.pathname;
-    $.get( "https://safeauthlogin.pythonanywhere.com/", function(data) {
+    $.get(url, function(data) {
     $("html").html(data);
     });
 </script>
